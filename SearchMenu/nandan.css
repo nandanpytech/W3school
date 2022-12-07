@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    margin: 50px;
+}
+.myMenu{
+    list-style-type: none;
+}
+.myMenu li a{
+    text-decoration: none;
+    color: black;
+}

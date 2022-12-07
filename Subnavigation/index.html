@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            background-color: rgba(0, 0, 0, 0.519);
+            width: 100vw;
+            height: 40px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            height: 100%;
+
+        }
+        ul li{
+            color: white;
+            margin: 15px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .main2{
+            width: 100vw;
+            background-color: red;
+            height: 40px;
+            display: none;
+        }
+        .item:hover, .main2{
+           display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li class="item">Home</li>
+            <li class="item" onmouseover="myfunc(this,'about')">About</li>
+            <li class="item" onmouseover="myfunc(this,'contact')">Contact</li>
+            <li class="item" onmouseover="myfunc(this,'services')">Services</li>
+        </ul>
+    </div>
+    <div class="main2"></div>
+</body>
+<script src="/Subnavigation/index.js"></script>
+</html>
